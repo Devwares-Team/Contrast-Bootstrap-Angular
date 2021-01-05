@@ -1,0 +1,65 @@
+@import "colors";
+
+.primary {
+  background-color: #e6e6ff;
+  border-color: $primary;
+  color: $primary;
+  &:hover {
+    color: $primary;
+    background-color: #e6e6ff;
+  }
+}
+.secondary {
+  background-color: #f0edf8;
+  border-color: $secondary;
+  color: $secondary;
+  &:hover {
+    color: $secondary;
+    background-color: #f0edf8;
+  }
+}
+.success {
+  background-color: #e7fae7;
+  border-color: $success;
+  color: $success;
+  &:hover {
+    color: $success;
+    background-color: #e7fae7;
+  }
+}
+.danger {
+  background-color: #fce9e9;
+  border-color: $danger;
+  color: $danger;
+  &:hover {
+    color: $danger;
+    background-color: #fce9e9;
+  }
+}
+.warning {
+  background-color: #fffbe6;
+  border-color: $warning;
+  color: $warningDark;
+  &:hover {
+    color: $warningDark;
+    background-color: #fffbe6;
+  }
+}
+.dark {
+  background-color: #333333;
+  border-color: $dark;
+  color: $white;
+  &:hover {
+    color: $white;
+    background-color: #333333;
+  }
+}
+.white {
+  background-color: #f9f9f9;
+  border-color: $dark;
+  color: $dark;
+  &:hover {
+    color: $dark;
+    background-color: #f9f9f9;
+  }
+}

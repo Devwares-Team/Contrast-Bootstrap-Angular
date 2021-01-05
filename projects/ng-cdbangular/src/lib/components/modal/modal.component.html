@@ -1,0 +1,40 @@
+<div *ngIf="isOpen === true && disableBackdrop === false" #modalBackdrop class="modal-backdrop show {{ backdropClass }}"
+    [style]="backdropStyle"></div>
+
+<div #modalContainer class="modal show {{ wrapperClass }}" [style]="wrapperStyle" tabindex="-1" role="dialog">
+    <div #modalContainerInner class="modal-dialog {{ modalClass }}" [style]="modalStyle" role="document">
+
+        <ng-container [ngSwitch]="animation">
+
+            <ng-container *ngSwitchCase="'top'">
+                <div #modalContent [@top]="modalAnimationState" class="modal-content {{ class }} {{ contentClass }}">
+                    <ng-container *ngTemplateOutlet="content"></ng-container>
+                </div>
+            </ng-container>
+
+            <ng-container *ngSwitchCase="'bottom'">
+                <div #modalContent [@bottom]="modalAnimationState" class="modal-content {{ class }} {{ contentClass }}">
+                    <ng-container *ngTemplateOutlet="content"></ng-container>
+                </div>
+            </ng-container>
+
+            <ng-container *ngSwitchCase="'left'">
+                <div #modalContent [@left]="modalAnimationState" class="modal-content {{ class }} {{ contentClass }}">
+                    <ng-container *ngTemplateOutlet="content"></ng-container>
+                </div>
+            </ng-container>
+
+            <ng-container *ngSwitchCase="'right'">
+                <div #modalContent [@right]="modalAnimationState" class="modal-content {{ class }} {{ contentClass }}">
+                    <ng-container *ngTemplateOutlet="content"></ng-container>
+                </div>
+            </ng-container>
+
+        </ng-container>
+
+    </div>
+</div>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

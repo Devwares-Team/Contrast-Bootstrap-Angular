@@ -1,0 +1,24 @@
+@import "../../../styles/colors";
+@import "../../../styles/colorStyles";
+
+.CDBListGroupLi {
+  list-style: none !important;
+  .nav-link {
+    padding: 0px;
+
+    &:hover {
+      color: #212529;
+    }
+  }
+}
+
+.CDBListGroupLink {
+  color: #212529;
+  .nav-link {
+    padding: 0px;
+
+    &:hover {
+      color: #212529;
+    }
+  }
+}

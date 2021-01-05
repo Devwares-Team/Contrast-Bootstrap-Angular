@@ -1,0 +1,19 @@
+<ng-container [ngSwitch]="href !== ''">
+
+    <ng-container *ngSwitchCase=true>
+        <CDBLink class="CDBListGroupLink {{ class }}" #Link [to]="href">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </CDBLink>
+    </ng-container>
+
+    <ng-container *ngSwitchCase=false>
+        <li #li class="CDBListGroupLi {{ class }}">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </li>
+    </ng-container>
+
+    <ng-template #content>
+        <ng-content></ng-content>
+    </ng-template>
+
+</ng-container>

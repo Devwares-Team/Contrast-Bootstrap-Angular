@@ -1,0 +1,28 @@
+<div class="carousel {{class}}" [style]="style" [class.carousel-thumbnails]="thumbnails"
+    [class.testimonial-carousel]="testimonial" [class.carousel-multi-item]="multiItem"
+    [class.carousel-fade]="!multiItem" aria-label='carousel' carouselRef (touchstart)="startTouch($event)"
+    (touchmove)="state.swipeAvailable && moveTouch($event)" (touchend)="onHoverStop && swipeAvailableHandler()"
+    (mouseenter)="onHoverStop && clearCycleIntervalHandler()" (mouseleave)="onHoverStop && restartInterval()">
+    <div *ngIf="showControls && multiItem" class="controls-top">
+        <CDBCarousel-control [testimonial]='isTestimonial' [multiItem]='isMultiItem' class="btn-floating"
+            direction="prev" role="button" (onClick)='prev()'>
+
+        </CDBCarousel-control>
+        <CDBCarousel-control [testimonial]='isTestimonial' [multiItem]='isMultiItem' class="btn-floating"
+            direction="next" role="button" (onClick)='next()'>
+
+        </CDBCarousel-control>
+    </div>
+    <ng-content></ng-content>
+    <div *ngIf="showControls && !multiItem">
+        <CDBCarousel-control [testimonial]='isTestimonial' [multiItem]='isMultiItem' direction="prev" role="button"
+            (onClick)='prev()'></CDBCarousel-control>
+        <CDBCarousel-control [testimonial]='isTestimonial' [multiItem]='isMultiItem' direction="next" role="button"
+            (onClick)='next()'></CDBCarousel-control>
+    </div>
+    <ol data-test="carousel-indicators" class="carousel-indicators" *ngIf="showIndicators">
+        <CDBCarouselindicator *ngFor="let indicator of CarouselIndicatorsArray; let i = index"
+            [img]="thumbnails ? state.srcArray[i] : null" key='i' [active]="state.activeItem === i+1"
+            (click)="goToIndex(i+1)"></CDBCarouselindicator>
+    </ol>
+</div>

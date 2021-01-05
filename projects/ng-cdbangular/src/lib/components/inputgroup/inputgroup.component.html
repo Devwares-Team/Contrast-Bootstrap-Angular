@@ -1,0 +1,11 @@
+<CDBInput #CDBInput [class]="inputClass" [hint]="hint" [type]="type" [label]="label" [labelClass]="labelClass"
+    [value]="value" [size]="size" [material]="material" [background]="background" [name]="name" [disabled]="disabled">
+
+    <div *ngIf="prepend" class="input-group-prepend">
+        <span #inputGroupPrepend class="input-group-text">{{ prepend }}</span>
+    </div>
+
+    <div *ngIf="append" class="input-group-append">
+        <span #inputGroupAppend class="input-group-text">{{ append }}</span>
+    </div>
+</CDBInput>

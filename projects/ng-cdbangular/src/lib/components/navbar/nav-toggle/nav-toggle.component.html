@@ -1,0 +1,11 @@
+<ng-container *ngIf="image; else elseTemplate">
+    <button #navToggle [type]="type" class="navbar-toggler {{ class }}" [style]="style">
+        <span class="navbar-toggler-icon" [style]="imagePath"></span>
+    </button>
+</ng-container>
+
+<ng-template #elseTemplate>
+    <button #navToggle [type]="type" class="navbar-toggler {{ class }}" [style]="style">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</ng-template>

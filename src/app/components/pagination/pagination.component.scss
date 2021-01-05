@@ -1,0 +1,48 @@
+.pagination {
+  padding: 15px !important;
+  border: 0.75px solid #ccc;
+  border-radius: 0;
+  align-items: center;
+
+  @import "../../styles/colorStyles";
+  .page-link {
+    min-width: 50px;
+    min-height: 50px;
+    border: 0.5px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.sm {
+      min-width: 30px;
+      min-height: 30px;
+    }
+    border-radius: 0;
+    &.circle {
+      border-radius: 50%;
+    }
+  }
+  .page-item {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0.5px solid #ccc;
+    &.sm {
+      min-width: 30px;
+      min-height: 30px;
+    }
+    border-radius: 0;
+    &.circle {
+      border-radius: 50%;
+    }
+    font-size: 1rem;
+    &.small {
+      font-size: 0.75rem;
+    }
+    &.big {
+      font-size: 1.25rem;
+    }
+  }
+}

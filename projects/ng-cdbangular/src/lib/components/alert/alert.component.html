@@ -1,0 +1,4 @@
+<div role="alert" class="CDBAlert {{class}} {{color}}" [style]="style">
+    <ng-content></ng-content>
+    <button class="CDBAlertButton" *ngIf="dismiss" (click)="onDismiss($event)"> &times;</button>
+</div>

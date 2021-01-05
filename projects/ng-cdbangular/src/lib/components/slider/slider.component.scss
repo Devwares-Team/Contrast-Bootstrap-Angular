@@ -1,0 +1,368 @@
+.custom-slider {
+  .ngx-slider {
+    .ngx-slider-bar {
+      background: #e4e4e4;
+      height: 5px;
+      border-radius: 3px;
+    }
+    .ngx-slider-selection {
+      background: rgb(214, 214, 214);
+    }
+    .ngx-slider-pointer {
+      width: 16px;
+      height: 16px;
+      top: -5px;
+      background-color: rgb(92, 92, 255);
+      border: 50%;
+      outline: none;
+      &:active {
+        -webkit-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+        -moz-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+        box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+        outline: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    .ngx-slider-bubble {
+      bottom: 23px;
+      background-color: black;
+      padding: 0 0.5rem;
+      color: white;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      opacity: 0.9;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      white-space: nowrap;
+      &::before {
+        width: 0.8rem;
+        height: 0.4rem;
+        transform: translateX(-50%);
+        position: absolute;
+        content: "";
+        border-color: transparent;
+        border-style: solid;
+        left: 50%;
+        top: 21px;
+        border-width: 0.8rem 0.8rem 0;
+        border-top-color: rgb(0, 0, 0);
+      }
+    }
+    .ngx-slider-limit {
+      display: none;
+    }
+    .ngx-slider-tick {
+      width: 1px;
+      height: 10px;
+      margin-left: 4px;
+      border-radius: 0;
+      background: #d1d4ff;
+      top: -1px;
+    }
+  }
+  &.slider-primary {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: rgb(92, 92, 255);
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          -moz-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-secondary {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #7356bf;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #7356bf;
+          -moz-box-shadow: 0px 0px 16px 1px #7356bf;
+          box-shadow: 0px 0px 16px 1px #7356bf;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-success {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #05944f;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #05944f;
+          -moz-box-shadow: 0px 0px 16px 1px #05944f;
+          box-shadow: 0px 0px 16px 1px #05944f;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-danger {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #e11900;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #e11900;
+          -moz-box-shadow: 0px 0px 16px 1px #e11900;
+          box-shadow: 0px 0px 16px 1px #e11900;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-warning {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #ffe975;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #ffe975;
+          -moz-box-shadow: 0px 0px 16px 1px #ffe975;
+          box-shadow: 0px 0px 16px 1px #ffe975;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-info {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #17a2b8;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #17a2b8;
+          -moz-box-shadow: 0px 0px 16px 1px #17a2b8;
+          box-shadow: 0px 0px 16px 1px #17a2b8;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-light {
+    .ngx-slider {
+      .ngx-slider-bar {
+        background: #b1b1b1;
+      }
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #eeeeee;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #eeeeee;
+          -moz-box-shadow: 0px 0px 16px 1px #eeeeee;
+          box-shadow: 0px 0px 16px 1px #eeeeee;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.slider-dark {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: #000000;
+        border: 50%;
+        outline: none;
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px #000000;
+          -moz-box-shadow: 0px 0px 16px 1px #000000;
+          box-shadow: 0px 0px 16px 1px #000000;
+          outline: none;
+        }
+      }
+    }
+  }
+  &.lg {
+    .ngx-slider {
+      .ngx-slider-bar {
+        height: 7px;
+      }
+      .ngx-slider-pointer {
+        width: 26px;
+        height: 26px;
+        top: -10px;
+      }
+    }
+  }
+  &.bottom {
+    .ngx-slider {
+      .ngx-slider-bubble {
+        top: 25px;
+        &::before {
+          width: 0.8rem;
+          height: 0.4rem;
+          transform: rotate(180deg);
+          position: absolute;
+          content: "";
+          border-color: transparent;
+          border-style: solid;
+          left: 50%;
+          margin-left: -0.8em;
+          top: -6px;
+          border-width: 0.8rem 0.8rem 0;
+          border-top-color: #000000;
+        }
+      }
+      .ngx-slider-limit {
+        display: none;
+      }
+      .ngx-slider-tick {
+        width: 1px;
+        height: 10px;
+        margin-left: 4px;
+        border-radius: 0;
+        background: #d1d4ff;
+        top: -1px;
+      }
+    }
+  }
+  &.off {
+    .ngx-slider {
+      .ngx-slider-bubble {
+        display: none;
+        bottom: 23px;
+        background-color: black;
+        padding: 0 0.5rem;
+        color: white;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        opacity: 0.9;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        white-space: nowrap;
+        &::before {
+          width: 0.8rem;
+          height: 0.4rem;
+          transform: translateX(-50%);
+          position: absolute;
+          content: "";
+          border-color: transparent;
+          border-style: solid;
+          left: 50%;
+          top: 21px;
+          border-width: 0.8rem 0.8rem 0;
+          border-top-color: rgb(0, 0, 0);
+        }
+      }
+      .ngx-slider-limit {
+        display: none;
+      }
+      .ngx-slider-tick {
+        width: 1px;
+        height: 10px;
+        margin-left: 4px;
+        border-radius: 0;
+        background: #d1d4ff;
+        top: -1px;
+      }
+    }
+  }
+  &.auto {
+    .ngx-slider {
+      .ngx-slider-pointer {
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        background-color: rgb(92, 92, 255);
+        border: 50%;
+        outline: none;
+        &:active ~ .ngx-slider-model-value {
+          display: block;
+        }
+        &:active {
+          -webkit-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          -moz-box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          box-shadow: 0px 0px 16px 1px rgb(92, 92, 255);
+          outline: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+      .ngx-slider-bubble {
+        display: none;
+        bottom: 23px;
+        background-color: black;
+        padding: 0 0.5rem;
+        color: white;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        opacity: 0.9;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        white-space: nowrap;
+        &::before {
+          width: 0.8rem;
+          height: 0.4rem;
+          transform: translateX(-50%);
+          position: absolute;
+          content: "";
+          border-color: transparent;
+          border-style: solid;
+          left: 50%;
+          top: 21px;
+          border-width: 0.8rem 0.8rem 0;
+          border-top-color: rgb(0, 0, 0);
+        }
+      }
+      .ngx-slider-limit {
+        display: none;
+      }
+      .ngx-slider-tick {
+        width: 1px;
+        height: 10px;
+        margin-left: 4px;
+        border-radius: 0;
+        background: #d1d4ff;
+        top: -1px;
+      }
+    }
+  }
+}

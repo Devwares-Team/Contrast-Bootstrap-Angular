@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.CDBBreadcrumb-default {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  text-transform: capitalize;
+  a {
+    display: unset !important;
+  }
+}
+
+.CDBBreadcrumb-bold {
+  font-weight: bold;
+}
+
+.CDBBreadcrumb-light {
+  font-weight: light;
+}
+
+.CDBBreadcrumb-circle {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.CDBBreadcrumb-uppercase {
+  text-transform: uppercase;
+}

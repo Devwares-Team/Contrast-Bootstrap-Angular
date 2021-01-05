@@ -1,0 +1,156 @@
+$pattern1: "../../assets/img/overlays/01.png";
+$pattern2: "../../assets/img/overlays/02.png";
+$pattern3: "../../assets/img/overlays/03.png";
+$pattern4: "../../assets/img/overlays/04.png";
+$pattern5: "../../assets/img/overlays/05.png";
+$pattern6: "../../assets/img/overlays/06.png";
+$pattern7: "../../assets/img/overlays/07.png";
+$pattern8: "../../assets/img/overlays/08.png";
+$pattern9: "../../assets/img/overlays/09.png";
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.pattern1 {
+  background-image: url(#{$pattern2});
+  background-attachment: fixed;
+}
+.pattern2 {
+  background-image: url(#{$pattern2});
+  background-attachment: "fixed";
+}
+.pattern3 {
+  background-image: url(#{$pattern3});
+  background-attachment: "fixed";
+}
+.pattern4 {
+  background-image: url(#{$pattern4});
+  background-attachment: "fixed";
+}
+.pattern5 {
+  background-image: url(#{$pattern5});
+  background-attachment: "fixed";
+}
+.pattern6 {
+  background-image: url(#{$pattern6});
+  background-attachment: "fixed";
+}
+.pattern7 {
+  background-image: url(#{$pattern7});
+  background-attachment: "fixed";
+}
+.pattern8 {
+  background-image: url(#{$pattern8});
+  background-attachment: "fixed";
+}
+.pattern9 {
+  background-image: url(#{$pattern9});
+  background-attachment: "fixed";
+}
+
+.blueLight {
+  background-color: rgba(33, 150, 243, 0.3);
+  color: #222222;
+}
+.redLight {
+  background-color: rgba(244, 67, 54, 0.3);
+  color: #222222;
+}
+.pinkLight {
+  background-color: rgba(233, 30, 99, 0.3);
+  color: #222222;
+}
+.yellowLight {
+  background-color: rgba(255, 235, 59, 0.3);
+  color: #222222;
+}
+.orangeLight {
+  background-color: rgba(255, 152, 0, 0.3);
+  color: #222222;
+}
+.purpleLight {
+  background-color: rgba(156, 39, 176, 0.3);
+  color: #222222;
+}
+.brownLight {
+  background-color: rgba(33, 150, 243, 0.3);
+  color: #222222;
+}
+.tealLight {
+  background-color: rgba(0, 150, 136, 0.3);
+  color: #222222;
+}
+.cyanLight {
+  background-color: rgba(0, 188, 212, 0.3);
+  color: #222222;
+}
+.greenLight {
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #222222;
+}
+.indigoLight {
+  background-color: rgba(63, 81, 181, 0.3);
+  color: #222222;
+}
+.darkLight {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.blueStrong {
+  background-color: rgba(33, 150, 243, 0.7);
+  color: white;
+}
+.redStrong {
+  background-color: rgba(244, 67, 54, 0.7);
+  color: white;
+}
+.pinkStrong {
+  background-color: rgba(233, 30, 99, 0.7);
+  color: white;
+}
+.yellowStrong {
+  background-color: rgba(255, 235, 59, 0.7);
+  color: white;
+}
+.orangeStrong {
+  background-color: rgba(255, 152, 0, 0.7);
+  color: white;
+}
+.purpleStrong {
+  background-color: rgba(156, 39, 176, 0.7);
+  color: white;
+}
+.brownStrong {
+  background-color: rgba(153, 102, 51, 0.7);
+  color: white;
+}
+.tealStrong {
+  background-color: rgba(0, 150, 136, 0.7);
+  color: white;
+}
+.cyanStrong {
+  background-color: rgba(0, 188, 212, 0.7);
+  color: white;
+}
+.greenStrong {
+  background-color: rgba(76, 175, 80, 0.7);
+  color: white;
+}
+.indigoStrong {
+  background-color: rgba(63, 81, 181, 0.7);
+  color: white;
+}
+.darkStrong {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}

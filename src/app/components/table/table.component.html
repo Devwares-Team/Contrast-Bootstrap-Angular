@@ -1,0 +1,24 @@
+<div
+    data-test="table"
+    [class.table-dark]='dark'
+    [class.table-responsive]='responsive'
+    [class.table-responsive-sm]='responsiveSm'
+    [class.table-responsive-md]='responsiveMd'
+    [class.table-responsive-lg]='responsiveLg'
+    [class.table-responsive-xl]='responsiveXl'
+    [class.table-wrapper-scroll-y]='scrollY'
+>
+    <table
+        class="table"
+        [class.w-auto]='autoWidth'
+        [class.table-bordered]='bordered'
+        [class.table-borderless]='borderless'
+        [class.btn-table]='btn'
+        [class.table-fixed]='fixed'
+        [class.table-hover]='hover'
+        [class.table-striped]='striped'
+        [class.able-sm]='small'
+    >
+        <ng-content></ng-content>
+    </table>
+</div>

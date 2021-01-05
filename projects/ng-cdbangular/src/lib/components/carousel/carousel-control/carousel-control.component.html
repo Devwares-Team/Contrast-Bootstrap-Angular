@@ -1,0 +1,6 @@
+<a #carouselcontrol (click)="onClick.emit()">
+    <div>
+        <span #caret [class]='caretClasses' aria-hidden="true"></span>
+        <span class="sr-only">{{text}}</span>
+    </div>
+</a>

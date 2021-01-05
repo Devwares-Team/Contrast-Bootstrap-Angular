@@ -1,0 +1,19 @@
+<ng-container [ngSwitch]="navbar === true">
+    <ng-container *ngSwitchCase="true">
+        <div #cdbCollapse [@expandBody2]="expandAnimationState" (@expandBody2.start)="onExpandBodyStart($event)"
+            (@expandBody2.done)="onExpandBodyDone($event)" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="false">
+        <div #cdbCollapse [@expandBody]="expandAnimationState" (@expandBody.start)="onExpandBodyStart($event)"
+            (@expandBody.done)="onExpandBodyDone($event)" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </div>
+    </ng-container>
+</ng-container>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

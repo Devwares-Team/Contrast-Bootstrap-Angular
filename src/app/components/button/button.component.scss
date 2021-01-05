@@ -1,0 +1,116 @@
+@import "../../styles/colors";
+@import "../../styles/colorStyles";
+
+.CDBbtn {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0px;
+}
+
+// size
+.xl {
+  padding: 30px;
+  font-size: 1.25rem;
+}
+
+.large {
+  padding: 20px 30px;
+  font-size: 1.25rem;
+}
+
+.medium {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+// End of size
+
+.flat {
+  box-shadow: none;
+}
+
+.circle {
+  border-radius: 30px;
+}
+
+// outline
+.outline.primary {
+  color: $primary;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $primaryHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.secondary {
+  color: $secondary;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $secondaryHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.success {
+  color: $success;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $successHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.danger {
+  color: $danger;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $dangerHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.dark {
+  color: $dark;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $darkHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.warning {
+  color: $warning;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $warningHover;
+    background-color: #fdfdfd;
+  }
+}
+
+.outline.info {
+  color: $info;
+  background-color: transparent;
+  border-width: 2px;
+
+  &:hover {
+    color: $infoHover;
+    background-color: #fdfdfd;
+  }
+}
+// End of outline

@@ -1,0 +1,72 @@
+@import "../../styles/colors";
+@import "../../styles/colorStyles";
+
+// .CDBProgress-container {
+//   display: block;
+//   width: 100%;
+// }
+
+.CDBProgress-default {
+  width: 100%;
+  background: #00000028;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  border-radius: 20px;
+}
+
+.CDBProgress-primary {
+  background: #3e98c728 !important;
+}
+
+.CDBProgress-secondary {
+  background: #7356bf28 !important;
+}
+
+.CDBProgress-danger {
+  background: #e1190028 !important;
+}
+
+.CDBProgress-warning {
+  background: #66512c28 !important;
+}
+
+.CDBProgress-info {
+  background: #17a2b828 !important;
+}
+
+.CDBProgress-success {
+  background: #05944f28 !important;
+}
+
+.progress-text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #000000;
+}
+
+.progress-text-primary {
+  color: #3e98c7 !important;
+}
+
+.progress-text-secondary {
+  color: #867d9c !important;
+}
+
+.progress-text-danger {
+  color: #e11900 !important;
+}
+
+.progress-text-warning {
+  color: #66512c !important;
+}
+
+.progress-text-info {
+  color: #17a2b8 !important;
+}
+
+.progress-text-success {
+  color: #05944f !important;
+}

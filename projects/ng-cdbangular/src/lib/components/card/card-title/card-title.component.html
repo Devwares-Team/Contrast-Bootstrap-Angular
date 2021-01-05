@@ -1,0 +1,43 @@
+<ng-container [ngSwitch]="tag !== ''">
+
+    <ng-container *ngSwitchCase="tag === 'h1'">
+        <h1 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h1>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="tag === 'h2'">
+        <h2 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h2>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="tag === 'h3'">
+        <h3 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h3>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="tag === 'h4'">
+        <h4 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h4>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="tag === 'h5'">
+        <h5 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h5>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="tag === 'h6'">
+        <h6 #cardTitle class="CDBCard-title {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </h6>
+    </ng-container>
+
+    <ng-template #content>
+        <ng-content></ng-content>
+    </ng-template>
+
+</ng-container>

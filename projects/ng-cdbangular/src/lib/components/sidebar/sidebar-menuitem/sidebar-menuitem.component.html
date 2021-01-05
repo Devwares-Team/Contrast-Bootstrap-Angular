@@ -1,0 +1,28 @@
+<ng-container *ngIf="link">
+    <a #sidebarMenuLink [routerLink]="link" class="sidebarMenuLink">
+        <ng-container *ngTemplateOutlet="menuItemContent"></ng-container>
+    </a>
+</ng-container>
+
+<ng-container *ngIf="href">
+    <a #sidebarMenuLink [href]="href" target="_blank" rel="noopener" class="sidebarMenuLink">
+        <ng-container *ngTemplateOutlet="menuItemContent"></ng-container>
+    </a>
+</ng-container>
+
+<ng-template #menuItemContent>
+    <li #sidebarMenuItem class="InnerMenuLi {{ class }}" [style]="style">
+        <div #sidebarMenuItemInner class="CDBSidebarMenuItem-default">
+            <ng-container *ngIf="icon">
+                <i class="side-icon fa fa-{{ icon }} fa-lg {{ iconClass }}"></i>
+            </ng-container>
+
+            <span class="item-content">
+                <ng-content></ng-content>
+            </span>
+            <span *ngIf="suffix" class="suffix-wrapper">
+                <ng-container *ngTemplateOutlet="suffix"></ng-container>
+            </span>
+        </div>
+    </li>
+</ng-template>

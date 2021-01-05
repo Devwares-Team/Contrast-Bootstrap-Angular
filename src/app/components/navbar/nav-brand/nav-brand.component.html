@@ -1,0 +1,17 @@
+<ng-container [ngSwitch]="href !== undefined">
+    <ng-container *ngSwitchCase="true">
+        <CDBLink #navBrand1 [to]="href" [class]="class" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </CDBLink>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="false">
+        <div #navBrand2 [class]="class" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </div>
+    </ng-container>
+</ng-container>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

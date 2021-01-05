@@ -1,0 +1,101 @@
+@import "colors";
+
+.primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $primaryHover;
+    color: $white;
+  }
+}
+
+.secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $white;
+
+  &:hover {
+    background-color: $secondaryHover;
+    color: $white;
+  }
+}
+
+.success {
+  background-color: $success;
+  border-color: $success;
+  color: $white;
+
+  &:hover {
+    background-color: $successHover;
+    color: $white;
+  }
+}
+
+.danger {
+  background-color: $danger;
+  border-color: $danger;
+  color: $white;
+
+  &:hover {
+    background-color: $dangerHover;
+    color: $white;
+  }
+}
+
+.warning {
+  background-color: $warning;
+  border-color: $warning;
+  color: $warningDark;
+
+  &:hover {
+    background-color: $warningHover;
+    color: $warningDark;
+  }
+}
+
+.dark {
+  background-color: $dark;
+  border-color: $dark;
+  color: $white;
+
+  &:hover {
+    background-color: $darkHover;
+    color: $white;
+  }
+}
+
+.light {
+  background-color: $light;
+  border-color: $light;
+  color: $dark;
+
+  &:hover {
+    background-color: $lightHover;
+    color: $dark;
+  }
+}
+
+.white {
+  background-color: $white;
+  border-color: $white;
+  color: $dark;
+
+  &:hover {
+    background-color: $whiteHover;
+    color: $dark;
+  }
+}
+
+.info {
+  background-color: $info;
+  border-color: $info;
+  color: $white;
+
+  &:hover {
+    background-color: $infoHover;
+    color: $white;
+  }
+}

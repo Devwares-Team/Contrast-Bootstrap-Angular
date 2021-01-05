@@ -1,0 +1,29 @@
+<button #dropdownToggle type="button" class="CDBDropDownToggle-default {{ class }}" [style]="style"
+    (click)="toggleDropdown($event)" [disabled]="disabled">
+
+    <span *ngIf="caretDropLeft === true" class="{{ caretMargin }} CDB-pointer" aria-haspopup="true">
+        <span class="arrow-wrapper">
+            <span #arrowLeft class="arrow"></span>
+        </span>
+    </span>
+
+    <ng-content></ng-content>
+
+    <span *ngIf="caretDropRight === true" class="{{ caretMargin }} CDB-pointer" aria-haspopup="true">
+        <span class="arrow-wrapper">
+            <span #arrowRight class="arrow"></span>
+        </span>
+    </span>
+
+    <span *ngIf="caretDropUp === true" class="{{ caretMargin }} CDB-pointer" aria-haspopup="true">
+        <span class="arrow-wrapper">
+            <span #arrowUp class="arrow"></span>
+        </span>
+    </span>
+
+    <span *ngIf="caretDropDown === true" class="{{ caretMargin }} CDB-pointer" aria-haspopup="true">
+        <span class="arrow-wrapper">
+            <span #arrowDown class="arrow"></span>
+        </span>
+    </span>
+</button>

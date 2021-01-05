@@ -1,0 +1,16 @@
+<div data-test='datatable-pagination' class='col-sm-12 col-md-12 pr-0'>
+    <div>
+        <CDBPagination [sm]='true'>
+            <CDBPagelink (click)='changeActivePage(tableEl.activePage-1)' [disabled]='tableEl.activePage <= 0'>
+                <span>Prev</span>
+            </CDBPagelink>
+            <CDBPageitem *ngFor='let page of pagesArray()' (click)='changeActivePage(page)'>
+                {{page + 1}}
+            </CDBPageitem>
+            <CDBPagelink aria-label='label' (click)='changeActivePage(tableEl.activePage+1)'
+                [disabled]='tableEl.activePage == numberOfPages() - 1'>
+                <span>Next</span>
+            </CDBPagelink>
+        </CDBPagination>
+    </div>
+</div>

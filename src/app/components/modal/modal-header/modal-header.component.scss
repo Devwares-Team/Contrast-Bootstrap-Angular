@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+@import "../../../styles/colorStyles";
+
+.modal-header {
+  align-items: unset;
+}
+
+.close {
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    border: none;
+  }
+}

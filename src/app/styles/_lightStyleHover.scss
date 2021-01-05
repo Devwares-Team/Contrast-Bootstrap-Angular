@@ -1,0 +1,44 @@
+@import "colors";
+
+.primaryHover {
+  &:hover {
+    color: $primary;
+    background-color: #e6e6ff;
+  }
+}
+.secondaryHover {
+  &:hover {
+    color: $secondary;
+    background-color: #f0edf8;
+  }
+}
+.successHover {
+  &:hover {
+    color: $success;
+    background-color: #e7fae7;
+  }
+}
+.dangerHover {
+  &:hover {
+    color: $danger;
+    background-color: #fce9e9;
+  }
+}
+.warningHover {
+  &:hover {
+    color: $warningDark;
+    background-color: #fffbe6;
+  }
+}
+.darkHover {
+  &:hover {
+    color: $white;
+    background-color: #333333;
+  }
+}
+.whiteHover {
+  &:hover {
+    color: $dark;
+    background-color: #f9f9f9;
+  }
+}

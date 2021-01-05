@@ -1,0 +1,92 @@
+@import "../../../styles/colors";
+@import "../../../styles/colorStyles";
+
+.CDBDropDownToggle-default {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.CDBDropDownToggle-circle {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.CDBDropDownToggle-lg {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.CDBDropDownToggle-sm {
+  font-size: 0.75rem;
+  padding: 5px;
+}
+
+// For caret
+.CDB-pointer {
+  pointer-events: none !important;
+}
+
+.arrow-wrapper {
+  position: relative;
+  min-width: 10px;
+  min-height: 10px;
+
+  .arrow {
+    // top: 50%;
+    // left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: inline-block;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    padding: 2.5px;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    margin-bottom: 5px;
+  }
+}
+
+.dropup {
+  transform: rotate(-135deg) !important;
+  -webkit-transform: rotate(-135deg) !important;
+  -moz-transform: rotate(-135deg) !important;
+  -ms-transform: rotate(-135deg) !important;
+  -o-transform: rotate(-135deg) !important;
+  margin-bottom: 0 !important;
+}
+
+.dropleft {
+  transform: rotate(135deg) !important;
+  -webkit-transform: rotate(135deg) !important;
+  -moz-transform: rotate(135deg) !important;
+  -ms-transform: rotate(135deg) !important;
+  -o-transform: rotate(135deg) !important;
+  margin-bottom: 0 !important;
+}
+
+.dropright {
+  transform: rotate(-45deg) !important;
+  -webkit-transform: rotate(-45deg) !important;
+  -moz-transform: rotate(-45deg) !important;
+  -ms-transform: rotate(-45deg) !important;
+  -o-transform: rotate(-45deg) !important;
+  margin-bottom: 0 !important;
+}

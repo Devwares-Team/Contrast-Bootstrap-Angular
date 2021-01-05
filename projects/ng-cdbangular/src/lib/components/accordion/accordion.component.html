@@ -1,0 +1,9 @@
+<div #accordion class="CDBwrapper {{accordionClass}}">
+    <ul class="accordion-list">
+        <li *ngFor="let data of data" class="accordion-list__item" key={key}>
+            <CDBAccordionitem [data]='data' [accordionHeaderClass]='accordionHeaderClass'
+                [accordionHeaderBodyClass]='accordionHeaderBodyClass' [accordionBodyClass]='accordionBodyClass'
+                [accordionItemClass]='accordionItemClass'></CDBAccordionitem>
+        </li>
+    </ul>
+</div>

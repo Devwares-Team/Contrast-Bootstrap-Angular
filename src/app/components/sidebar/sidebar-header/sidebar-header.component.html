@@ -1,0 +1,10 @@
+<div class="CDBSidebarHeader-default">
+    <div #sidebarHeader class="head-div {{ class }}" [style]="style">
+        <span *ngIf="prefix" class="icon-suffix" (click)="toggleSidebar()">
+            <ng-container *ngTemplateOutlet="prefix"></ng-container>
+        </span>
+        <span class="head-text">
+            <ng-content></ng-content>
+        </span>
+    </div>
+</div>

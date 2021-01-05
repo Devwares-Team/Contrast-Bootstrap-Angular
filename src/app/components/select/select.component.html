@@ -1,0 +1,7 @@
+<select class="custom-select {{class}}" [style]="style">
+    <option value="">{{ selected }}</option>
+
+    <ng-container *ngFor="let option of options; let i=index">
+        <option [class]='optionClass' [value]="option.value">{{ option.text }}</option>
+    </ng-container>
+</select>

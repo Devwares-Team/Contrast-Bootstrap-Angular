@@ -1,0 +1,76 @@
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+  25% {
+    stroke: #de3e35;
+  }
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+  100% {
+    stroke: #4285f4;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+.CDBSpinner {
+  stroke-width: 5;
+  animation-name: rotator;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+}
+
+.CDBSpinnerCircle {
+  stroke: #276ef1;
+  &.warning {
+    stroke: #ffe975;
+  }
+  &.success {
+    stroke: #05944f;
+  }
+  &.secondary {
+    stroke: #7356bf;
+  }
+  &.dark {
+    stroke: #000000;
+  }
+  &.danger {
+    stroke: #e11900;
+  }
+  &.info {
+    stroke: #17a2b8;
+  }
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite;
+  &.multicolor {
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  }
+}

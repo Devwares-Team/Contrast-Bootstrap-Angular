@@ -1,0 +1,19 @@
+<ng-container [ngSwitch]="small === false">
+
+    <ng-container *ngSwitchCase="true">
+        <p #cardText class="card-text {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </p>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="false">
+        <small #cardText class="card-text {{ class }}" [style]="style">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </small>
+    </ng-container>
+
+    <ng-template #content>
+        <ng-content></ng-content>
+    </ng-template>
+
+</ng-container>

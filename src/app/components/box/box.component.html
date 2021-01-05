@@ -1,0 +1,18 @@
+<ng-container [ngSwitch]="tag">
+    <span #box class="{{ class }}" [style]="style" *ngSwitchCase="'span'">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </span>
+    <div #box class="{{ class }}" [style]="style" *ngSwitchCase="'div'">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+    <p #box class="{{ class }}" [style]="style" *ngSwitchCase="'p'">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </p>
+    <section #box class="{{ class }}" [style]="style" *ngSwitchCase="'section'">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+    </section>
+</ng-container>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

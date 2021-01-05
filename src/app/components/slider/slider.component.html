@@ -1,0 +1,5 @@
+<div class="custom-slider {{tooltip}} {{tooltipPlacement}} {{variant}} {{size}} {{class}}" [style]='style'>
+    <ngx-slider [(value)]="value" [options]="options" (userChange)="callOnChange($event)"
+        (userChangeEnd)="callAfterChange($event)">
+    </ngx-slider>
+</div>
