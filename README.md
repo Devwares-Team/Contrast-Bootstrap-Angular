@@ -2,10 +2,10 @@
 
 # Contrast Design Bootstrap Angular (Free)
 
-> Elegant UI Kit and reusable components for building mobile-first, responsive webistes and web apps
+> Elegant UI Kit and reusable components library for building mobile-first, responsive webistes and web apps
 
-[![NPM](https://img.shields.io/npm/v/cdbreact.svg)](https://www.npmjs.com/package/cdbreact) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-![npm](https://img.shields.io/npm/dw/cdbreact)
+[![NPM](https://img.shields.io/npm/v/ng-cdbangular.svg)](https://www.npmjs.com/package/ng-cdbangular) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![npm](https://img.shields.io/npm/dw/ng-cdbangular)
 
 ## Install
 
@@ -71,11 +71,11 @@ import { CDBFreeModule } from 'ng-cdbangular';
 
 ## Documentation
 
-[Check out our documentation here](https://www.devwares.com/docs/contrast/react/index)
+[Check out our documentation here](https://www.devwares.com/docs/contrast/angular/index)
 
 ## PRO Version
 
-[Contrast Design Bootstrap PRO](https://www.devwares.com/product/contrast-pro)
+[Contrast Design Bootstrap Angular PRO](https://www.devwares.com/product/angular-contrast-pro)
 
 ## License
 
@@ -93,7 +93,7 @@ See License in &lt;license.pdf&gt; © [Devwares](https://github.com/Devwares)
 
 ### Check out and star our GitHub repository
 
-* [Github](https://github.com/Devwares)
+* [Github](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular)
   
 * Create pull requests
 * Submit bugs
