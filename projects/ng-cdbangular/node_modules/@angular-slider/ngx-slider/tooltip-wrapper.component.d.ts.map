@@ -1,0 +1,1 @@
+{"version":3,"file":"tooltip-wrapper.component.d.ts","sources":["tooltip-wrapper.component.d.ts"],"names":[],"mappings":"AAAA;;AACA;AACA;AACA;AACA;AACA;;;AACA","sourcesContent":["import { TemplateRef } from '@angular/core';\nexport declare class TooltipWrapperComponent {\n    template: TemplateRef<any>;\n    tooltip: string;\n    placement: string;\n    content: string;\n}\n"]}
