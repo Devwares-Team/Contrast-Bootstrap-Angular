@@ -1,3 +1,4 @@
+import { IconModule } from './icon/icon.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -33,6 +34,7 @@ import { SpinnerModule } from './spinner/spinner.module';
 import { SwitchModule } from './switch/switch.module';
 import { TableModule } from './table/table.module';
 import { ViewModule } from './view/view.module';
+import { IconComponent } from './icon/icon.component';
 
 export {
   AccordionModule,
@@ -165,6 +167,8 @@ export {
 
 export { ViewModule, ViewComponent } from './view/index';
 
+export {IconModule, IconComponent } from './icon/index'
+
 const MODULES = [
   AccordionModule,
   AlertModule,
@@ -181,6 +185,7 @@ const MODULES = [
   CollapseModule,
   DropdownModule,
   FooterModule,
+  IconModule,
   IframeModule,
   InputModule,
   InputgroupModule,

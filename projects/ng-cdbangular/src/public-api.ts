@@ -36,4 +36,4 @@ export * from './lib/components/switch/index';
 export * from './lib/components/table/index';
 export * from './lib/components/view/index';
 export * from './lib/components/cdb-free.module';
-
+export * from './lib/components/icon/index'
