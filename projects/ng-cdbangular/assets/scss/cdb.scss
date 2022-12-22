@@ -1,0 +1,54 @@
+// CORE FUNCTIONS
+@import './bootstrap/functions';
+
+// CORE VARIABLES
+@import './bootstrap/variables';
+
+// BOOTSTRAP CORE
+@import './bootstrap/mixins';
+@import './bootstrap/utilities';
+
+// BOOTSTRAP CORE COMPONENTS
+@import './bootstrap/root';
+@import './bootstrap/reboot';
+@import './bootstrap/type';
+@import './bootstrap/images';
+@import './bootstrap/containers';
+@import './bootstrap/grid';
+
+// BOOTSTRAP COMPONENTS
+@import './bootstrap/tables';
+@import './bootstrap/forms';
+@import './bootstrap/buttons';
+@import './bootstrap/transitions';
+@import './bootstrap/dropdown';
+@import './bootstrap/button-group';
+@import './bootstrap/nav';
+@import './bootstrap/navbar';
+@import './bootstrap/card';
+@import './bootstrap/breadcrumb';
+@import './bootstrap/pagination';
+@import './bootstrap/badge';
+@import './bootstrap/alert';
+@import './bootstrap/accordion';
+@import './bootstrap/progress';
+@import './bootstrap/placeholders';
+@import './bootstrap/list-group';
+@import './bootstrap/close';
+@import './bootstrap/toasts';
+@import './bootstrap/modal';
+@import './bootstrap/popover';
+@import './bootstrap/carousel';
+@import './bootstrap/spinners';
+@import './bootstrap/offcanvas';
+@import './bootstrap/tooltip';
+
+// Helpers
+@import './bootstrap/helpers';
+
+// Utilities
+@import './bootstrap/utilities/api';
+
+
+@import '~@angular/cdk/overlay-prebuilt.css';
+@import '~@angular/cdk/text-field-prebuilt.css';
