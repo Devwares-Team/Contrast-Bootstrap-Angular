@@ -23,6 +23,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              {
+                "glob": "**/*",
+                "input": "dist/cdbangular-pro/assets",
+                "output": "/assets/"
+              },
               "src/favicon.ico",
               "src/assets"
             ],
