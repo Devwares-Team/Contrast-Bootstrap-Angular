@@ -145,7 +145,6 @@
       }
     }
   },
-  "defaultProject": "Contrast-Bootstrap-Angular",
   "cli": {
     "analytics": "cf5ba56a-bf59-46e9-9df2-11d3df10f5e7"
   }
