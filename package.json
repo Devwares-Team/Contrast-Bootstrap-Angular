@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "release": "standard-version && git push --follow-tags && npm run publish-lib",
-    "publish-lib": "ng build ng-cdbangular --prod && cd dist/ng-cdbangular && npm publish"
+    "publish-lib": "ng build ng-cdbangular --configuration production && cd dist/ng-cdbangular && npm publish"
   },
   "private": true,
   "dependencies": {
