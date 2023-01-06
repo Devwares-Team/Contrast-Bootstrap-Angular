@@ -5,7 +5,7 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "whitelistedNonPeerDependencies": [
+  "allowedNonPeerDependencies": [
     "tslib",
     "@angular-slider/ngx-slider",
     "@popperjs/core",
