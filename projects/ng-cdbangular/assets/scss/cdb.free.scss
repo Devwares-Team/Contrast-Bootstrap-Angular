@@ -32,7 +32,6 @@
 @import './bootstrap/alert';
 @import './bootstrap/accordion';
 @import './bootstrap/progress';
-@import './bootstrap/placeholders';
 @import './bootstrap/list-group';
 @import './bootstrap/close';
 @import './bootstrap/toasts';
@@ -49,6 +48,3 @@
 // Utilities
 @import './bootstrap/utilities/api';
 
-
-@import '~@angular/cdk/overlay-prebuilt.css';
-@import '~@angular/cdk/text-field-prebuilt.css';
