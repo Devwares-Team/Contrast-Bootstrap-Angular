@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.5...v1.1.6) (2023-01-09)
+
+
+### Bug Fixes
+
+* style imports error fixes ([af35952](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/commit/af35952b17a1a51a766b451e8b5d259b4bb0364d))
+
 ### [1.1.5](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.4...v1.1.5) (2023-01-06)
 
 ### [1.1.4](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.3...v1.1.4) (2023-01-06)
