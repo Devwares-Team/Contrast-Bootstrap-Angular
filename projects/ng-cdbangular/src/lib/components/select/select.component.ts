@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Renderer2, ElementRef } from '@angular/core';
 export class SelectComponent implements OnInit {
   @Input() class: string;
   @Input() style: string;
-  @Input() options: [];
+  @Input() options: any[];
   @Input() selected: string;
   @Input() optionClass: string;
 
