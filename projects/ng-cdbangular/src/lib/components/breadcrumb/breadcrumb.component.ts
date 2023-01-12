@@ -22,6 +22,15 @@ export class BreadcrumbComponent implements OnInit, AfterViewInit {
   @Input() uppercase: boolean;
   @Input() class: string;
   @Input() style: string;
+  @Input() color: | ''
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'danger'
+  | 'warning'
+  | 'info'
+  | 'light'
+  | 'dark' = '';
   @ViewChild('ol', { static: false }) ol: ElementRef;
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
@@ -46,6 +55,10 @@ export class BreadcrumbComponent implements OnInit, AfterViewInit {
 
     if (this.circle === true) {
       this.renderer.addClass(this.ol.nativeElement, 'CDBBreadcrumb-circle');
+    }
+
+    if (this.color !== "") {
+      this.renderer.addClass(this.ol.nativeElement, "bg-"+this.color)
     }
   }
 }

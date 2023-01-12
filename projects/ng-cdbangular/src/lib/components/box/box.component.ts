@@ -21,7 +21,16 @@ export class BoxComponent implements OnInit, AfterViewInit {
   @Input() alignContent: string;
   @Input() alignItems: string;
   @Input() alignSelf: string;
-  @Input() bg: string;
+  @Input() bg:
+    | ''
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'info'
+    | 'light'
+    | 'dark' = '';
   @Input() color: string;
   @Input() display: string;
   @Input() flex: string;
@@ -90,6 +99,7 @@ export class BoxComponent implements OnInit, AfterViewInit {
 
     if (this.color) {
       this.renderer.addClass(this.box.nativeElement, `text-${this.color}`);
+      this.renderer.setStyle(this.box.nativeElement, "color", this.color)
     }
 
     if (this.bg) {
