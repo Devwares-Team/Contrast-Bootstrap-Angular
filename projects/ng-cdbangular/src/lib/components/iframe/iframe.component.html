@@ -1,7 +1,7 @@
-<iframe *ngIf="allowfullscreen; else noFullScreen" #iframe class="embed-responsive-item" attr.allow="fullscreen" [title]="title">
+<iframe *ngIf="allowfullscreen; else noFullScreen" [src]="src" #iframe class="embed-responsive-item" allow="fullscreen" [title]="title">
 </iframe>
 
 <ng-template #noFullScreen>
-    <iframe #iframe class="embed-responsive-item" attr.allow="null" [title]="title">
+    <iframe #iframe [src]="src" class="embed-responsive-item" allow=null [title]="title">
     </iframe>
 </ng-template>
