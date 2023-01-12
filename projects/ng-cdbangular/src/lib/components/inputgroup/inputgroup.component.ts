@@ -34,6 +34,11 @@ export class InputgroupComponent implements OnInit, AfterViewInit {
   @Input() id: string;
   @Input() disabled: boolean = false;
   @Input() name: string = '';
+  @Input() icon: string;
+  @Input() iconBrand: boolean= false
+  @Input() iconLight: boolean= false
+  @Input() iconRegular: boolean= false
+
 
   @ViewChild('inputGroup') inputGroup: ElementRef;
   @ViewChild('inputGroupAppend') inputGroupAppend: ElementRef;

@@ -36,6 +36,10 @@ export class InputComponent implements OnInit, AfterViewInit {
   @Input() group: boolean = false;
   @Input() containerId: string;
   @Input() labelId: string;
+  @Input() icon: string;
+  @Input() iconBrand: boolean= false
+  @Input() iconLight: boolean= false
+  @Input() iconRegular: boolean= false
 
   @ViewChild('inputContainer') inputContainer: ElementRef;
   @ViewChild('input') input: ElementRef;

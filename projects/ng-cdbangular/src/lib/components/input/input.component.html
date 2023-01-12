@@ -1,3 +1,7 @@
+<span *ngIf="icon">
+    <CDBIcon [icon]="icon" [brand]="iconBrand" [regular]="iconRegular" [light]="iconLight"></CDBIcon>
+</span>
+
 <ng-container *ngIf="type === 'textarea'; else elseTemplate">
     <div #inputContainer class="w-100">
 
