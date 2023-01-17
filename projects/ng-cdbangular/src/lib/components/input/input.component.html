@@ -1,28 +1,64 @@
-<span *ngIf="icon">
-    <CDBIcon [icon]="icon" [brand]="iconBrand" [regular]="iconRegular" [light]="iconLight"></CDBIcon>
-</span>
-
 <ng-container *ngIf="type === 'textarea'; else elseTemplate">
+  <div class="d-flex align-items-center gap-3">
+    <span *ngIf="icon">
+      <CDBIcon
+        [icon]="icon"
+        [brand]="iconBrand"
+        [regular]="iconRegular"
+        [light]="iconLight"
+      ></CDBIcon>
+    </span>
     <div #inputContainer class="w-100">
-
-        <textarea #input [name]="name" [style]="style" [placeholder]="hint" [cols]="cols" [rows]="rows" [value]="value"
-            (input)="inputChange(input)"></textarea>
-        <label #inputLabel *ngIf="label">{{ label }}</label>
+      <textarea
+        #input
+        [name]="name"
+        [style]="style"
+        [placeholder]="hint"
+        [cols]="cols"
+        [rows]="rows"
+        [value]="value"
+        (input)="inputChange(input)"
+      ></textarea>
+      <label #inputLabel *ngIf="label">{{ label }}</label>
     </div>
+  </div>
 </ng-container>
 
 <ng-template #elseTemplate>
+  <div class="d-flex align-items-center gap-3">
+    <span *ngIf="icon">
+      <CDBIcon
+        [icon]="icon"
+        [brand]="iconBrand"
+        [regular]="iconRegular"
+        [light]="iconLight"
+      ></CDBIcon>
+    </span>
+
     <div #inputContainer class="w-100">
+      <span>
         <ng-container>
-            <ng-content select=".input-group-prepend"></ng-content>
+          <ng-content select=".input-group-prepend"></ng-content>
         </ng-container>
 
-        <input #input [type]="type" class="rounded-0" [style]="style" [placeholder]="hint" [disabled]=disabled
-            [name]="name" [required]="required" [value]="value" (input)="inputChange(input)">
+        <input
+          #input
+          [type]="type"
+          class="rounded-0"
+          [style]="style"
+          [placeholder]="hint"
+          [disabled]="disabled"
+          [name]="name"
+          [required]="required"
+          [value]="value"
+          (input)="inputChange(input)"
+        />
         <label #inputLabel *ngIf="label">{{ label }}</label>
 
         <ng-container>
-            <ng-content select=".input-group-append"></ng-content>
+          <ng-content select=".input-group-append"></ng-content>
         </ng-container>
+      </span>
     </div>
+  </div>
 </ng-template>
