@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.6...v1.2.0) (2023-01-18)
+
+
+### Features
+
+* new inputgroup component prepend & append ([fd21342](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/commit/fd213421c97030689574ea8db03726f652e55b22))
+
 ### [1.1.6](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.5...v1.1.6) (2023-01-09)
 
 
