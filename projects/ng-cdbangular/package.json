@@ -20,13 +20,13 @@
   ],
   "license": "",
   "peerDependencies": {
-    "@angular/common": "^10.2.4",
-    "@angular/core": "^10.2.4"
+    "@angular/common": "^15.0.2",
+    "@angular/core": "^15.0.2"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
+    "tslib": "^2.4.1",
     "@angular-slider/ngx-slider": "^2.0.3",
-    "@popperjs/core": "^2.5.4",
+    "@popperjs/core": "^2.6.0",
     "bootstrap-css-only": "^4.4.1"
   }
 }

@@ -20,7 +20,7 @@ export class BadgeComponent implements OnInit {
     | 'success'
     | 'danger'
     | 'warning'
-    | 'info' = 'primary';
+    | 'info' | 'dark'= 'primary';
   @Input() borderType: 'box' | 'pill' = 'box';
   @Input() size: string = 'medium';
   @Input() flat: boolean = false;

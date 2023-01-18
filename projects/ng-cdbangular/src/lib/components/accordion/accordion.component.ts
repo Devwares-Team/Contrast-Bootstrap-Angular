@@ -17,7 +17,7 @@ import {
 })
 export class AccordionComponent implements OnInit, AfterViewInit {
   @ViewChild('accordion', { static: false }) accordion: ElementRef;
-  @Input() data: [];
+  @Input() data: any[];
   @Input() accordionClass: string;
   @Input() accordionHeaderBodyClass: string;
   @Input() accordionHeaderClass: string;

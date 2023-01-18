@@ -36,7 +36,11 @@
 }
 
 .circle {
-  border-radius: 30px;
+  border-radius: 30px !important;
+  -webkit-border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  -ms-border-radius: 30px !important;
+  -o-border-radius: 30px !important;
 }
 
 // outline

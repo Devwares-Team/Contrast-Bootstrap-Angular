@@ -1,3 +1,5 @@
-<button #button [type]="type" class="btn CDBbtn {{ class }}" [style]="style" [disabled]="disabled">
-    <ng-content></ng-content>
-</button>
+<div #buttonWrapper>
+    <button #button [type]="type" class="btn CDBbtn {{ class }}" [style]="style" [disabled]="disabled">
+        <ng-content></ng-content>
+    </button>
+</div>

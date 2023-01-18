@@ -23,7 +23,7 @@ export class DropdownToggleComponent implements OnInit, AfterViewInit {
     | 'success'
     | 'danger'
     | 'warning'
-    | 'info' = 'primary';
+    | 'info' | 'dark' = 'primary';
   @Input() caretDropLeft: boolean = false;
   @Input() caretDropRight: boolean = false;
   @Input() caretDropUp: boolean = false;
