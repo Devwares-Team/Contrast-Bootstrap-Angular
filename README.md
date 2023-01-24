@@ -2,7 +2,7 @@
 
 # Contrast Design Bootstrap Angular (Free)
 
-> Elegant UI Kit and reusable components library for building mobile-first, responsive webistes and web apps
+> Angular 15 & Bootstrap 5 Elegant UI Kit and reusable components library for building mobile-first, responsive webistes and web apps
 
 [![NPM](https://img.shields.io/npm/v/ng-cdbangular.svg)](https://www.npmjs.com/package/ng-cdbangular) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![npm](https://img.shields.io/npm/dw/ng-cdbangular)
@@ -21,10 +21,10 @@ yarn add ng-cdbangular
 
 ## Usage
 
-Add bootstrap-css-only to angular.json
+Add Contrast Design Bootstrap styles to the `angular.json` file
 ```jsx
 "styles": [
-  "node_modules/bootstrap-css-only/css/bootstrap.min.css"
+  "node_modules/ng-cdbangular/assets/scss/cdb.scss"
 ]
 ```
 
@@ -35,6 +35,16 @@ import { AlertModule } from 'ng-cdbangular';
 @NgModule({
   imports: [
     AlertModule
+  ]
+})
+```
+You can also import all cdbangular modules this way
+```jsx
+import { CDBFreeModule } from 'ng-cdbangular';
+
+@NgModule({
+  imports: [
+    CDBFreeModule,
   ]
 })
 ```
@@ -49,16 +59,6 @@ In app.component.html
 </CDBAlert>
 ```
 
-You can also import all cdbangular modules this way
-```jsx
-import { CDBFreeModule } from 'ng-cdbangular';
-
-@NgModule({
-  imports: [
-    CDBFreeModule,
-  ]
-})
-```
 
 # Demo
 
