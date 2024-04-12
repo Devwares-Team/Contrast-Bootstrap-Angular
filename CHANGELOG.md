@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.2 (2024-04-12)
+
 ### 1.2.1 (2023-01-24)
 
 ## [1.2.0](https://github.com/Devwares-Team/Contrast-Bootstrap-Angular/compare/v1.1.6...v1.2.0) (2023-01-18)
