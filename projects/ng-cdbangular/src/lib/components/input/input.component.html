@@ -51,6 +51,7 @@
           [required]="required"
           [value]="value"
           (input)="inputChange(input)"
+          (blur)="onBlur()"
         />
         <label #inputLabel *ngIf="label">{{ label }}</label>
 

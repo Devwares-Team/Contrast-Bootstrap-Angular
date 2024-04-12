@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { InputModule } from './components/input';
 
-import { CDBFreeModule } from 'ng-cdbangular';
+// import { CDBFreeModule } from 'ng-cdbangular';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { CDBFreeModule } from 'ng-cdbangular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CDBFreeModule
+    FormsModule,
+    InputModule
+    // CDBFreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
