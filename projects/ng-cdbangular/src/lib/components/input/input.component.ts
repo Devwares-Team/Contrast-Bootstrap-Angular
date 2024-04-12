@@ -7,15 +7,24 @@ import {
   Renderer2,
   ViewChild,
   ViewEncapsulation,
+  forwardRef,
 } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'CDBInput',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  providers: [
+    {
+      provide:NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => InputComponent),
+      multi: true
+    }
+  ]
 })
-export class InputComponent implements OnInit, AfterViewInit {
+export class InputComponent implements OnInit, AfterViewInit, ControlValueAccessor {
   @Input() class: string;
   @Input() containerClass: string;
   @Input() labelClass: string;
@@ -207,9 +216,29 @@ export class InputComponent implements OnInit, AfterViewInit {
     }
   }
 
+  
+  onChange: (value: string) => void = () => {};
+  onTouched: () => void = () => {};
+  writeValue(value: string): void {
+    this.value = value;
+  }
+
+  registerOnChange(fn: (value: string) => void): void {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn: () => void): void {
+    this.onTouched = fn;
+  }
+
+  setDisabledState(isDisabled: boolean): void {
+    this.disabled = isDisabled;
+  }
+
   onBlur(input) {
     this.isFocused = false;
     this.inputChange(input);
+    this.onTouched()
 
     if (this.label) {
       if (input.value !== '') {
@@ -225,6 +254,8 @@ export class InputComponent implements OnInit, AfterViewInit {
     if (input.value !== '') {
       this.isPristine = false;
       this.isDirty = true;
+      this.value= input.value
+      this.onChange(input.value)
     } else {
       this.isPristine = true;
       this.isDirty = false;

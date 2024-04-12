@@ -18,6 +18,7 @@
         [rows]="rows"
         [value]="value"
         (input)="inputChange(input)"
+        (blur)="onBlur()"
       ></textarea>
       <label #inputLabel *ngIf="label">{{ label }}</label>
     </div>
@@ -51,6 +52,7 @@
           [required]="required"
           [value]="value"
           (input)="inputChange(input)"
+          (blur)="onBlur()"
         />
         <label #inputLabel *ngIf="label">{{ label }}</label>
 
